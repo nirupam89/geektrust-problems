@@ -1,5 +1,6 @@
 package com.mymoney;
 
+import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
@@ -118,6 +119,10 @@ public class Geektrust {
 		}
 		
 		return response.toString().trim();
+	}
+	
+	public String parseAndProcessFile(File inputFile) {
+		return parseAndProcessFile(inputFile.getAbsolutePath());
 	}
 
 }
